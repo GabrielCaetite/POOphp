@@ -1,13 +1,13 @@
 <?php
 
-    public class FuncionarioAssalariado extends Funcionario{
+    public class FuncionarioAssalariado{
 
         private $salarioFixo;
 
-        public set_nome($s){
-            this->$salarioFixo = $s;
+        public set_salarioFixo($sf){
+            this->$salarioFixo = $sf;
         }
-        public get_nome(){
+        public get_salarioFixo(){
             return this->$salarioFixo;
         }
 

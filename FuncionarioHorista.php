@@ -1,6 +1,6 @@
 <?php
 
-    public class FuncionarioHorista extends Funcionario{
+    public class FuncionarioHorista{
 
         private $valorHora;
         private $horasTrabalhadas;
