@@ -1,16 +1,21 @@
 <?php
 
-public class FuncionarioAssalariado{
+    public class FuncionarioAssalariado extends Funcionario{
 
-    private $salarioFixo;
-    private $horasTrabalhadas;
+        private $salarioFixo;
 
-    public function __construct(){
-        $salarioFixo = 0;
-        $horasTrabalhadas = 0;
+        public set_nome($s){
+            this->$salarioFixo = $s;
+        }
+        public get_nome(){
+            return this->$salarioFixo;
+        }
+
+        public function __construct(){
+            $salarioFixo = 0;
+        }
+
+        function calcularPagamento(){
+            return $salarioFixo;
+        }
     }
-
-    public calcularPagamento(){
-        return $salarioFixo;
-    }
-}

@@ -1,22 +1,25 @@
 <?php
 
-public class Empresa{
+    public class Empresa extends Funcionario{
 
-    private $funcionarios;
+        private $funcionarios;
 
-    public function __construct(){
-        $funcionarios = array();
-    }
-
-    public adicionarFuncionario($funcionario){
-        $funcionario[] = $funcionario;
-    }
-
-    public exibirFolhaDePagamento(){
-
-        foreach($funcionarios = $key => $value){
-            
+        public function __construct(){
+            $funcionarios = array();
         }
 
-    }
-}
+        function adicionarFuncionario($funcionario){
+            $funcionarios[] = $funcionario;
+        }
+
+        public exibirFolhaDePagamento(){
+
+            foreach($funcionarios = $key => $value){
+                echo 'Nome: '.$value['nome'].' CPF: '.$value['cpf'];
+            }
+        }
+    }   
+
+
+    $funcionarios = new Funcionario();
+?>
