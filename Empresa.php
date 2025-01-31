@@ -8,7 +8,7 @@
             $funcionarios = array();
         }
 
-        function adicionarFuncionario($funcionario){
+       public  function adicionarFuncionario($funcionario){
             $funcionarios[] = $funcionario;
         }
 
@@ -18,6 +18,8 @@
 
             }
         }
+
+
     }   
 
 ?>

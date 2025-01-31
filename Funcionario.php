@@ -24,7 +24,7 @@
             $cpf = 0;
         }
 
-        function calcularPagamento(){
+        public function calcularPagamento(){
             echo 'pagamento';
         }
 

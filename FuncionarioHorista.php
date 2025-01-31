@@ -25,7 +25,7 @@
             $horasTrabalhadas = 0;
         }
 
-        function calcularPagamento($valorHora, $horasTrabalhadas){
+        public function calcularPagamento($valorHora, $horasTrabalhadas){
             $pagamento = $valorHora*$horasTrabalhadas;
             return $pagamento;
         }

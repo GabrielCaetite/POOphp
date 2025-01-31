@@ -15,7 +15,7 @@
             $salarioFixo = 0;
         }
 
-        function calcularPagamento(){
+        public function calcularPagamento(){
             return $salarioFixo;
         }
     }
